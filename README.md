@@ -2,4 +2,4 @@
 University Admit Eligibility Predictor
 Assignment 1 completed - NPavithra2002
 Assignment 1 completed - PriyadharshiniJayaraman
-Assignment 1 completed - dharanijayakumar
+Assignment 1 completed- indhumalini
