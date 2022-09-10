@@ -13,9 +13,8 @@ Original file is located at
 
 s = "Hi there Sam!"
 
-s="Hi there Sam!"
-a=s.split()
-print(a)
+s="Hi there  Sam!"
+print(s.split())
 
 """## 2. Use .format() to print the following string. 
 
@@ -25,15 +24,16 @@ print(a)
 planet = "Earth"
 diameter = 12742
 
-planet="Earth"
-diameter=12742
-print("The diameter of Earth is 12741 Kilometers")
+planet = "Earth"
+diameter = 12742
+print("The diameter of {} is {} Kilometers".format(planet,diameter))
 
 """## 3. In this nest dictionary grab the word "hello"
 """
 
 d = {'k1':[1,2,3,{'tricky':['oh','man','inception',{'target':[1,2,3,'hello']}]}]}
 
+d = {'k1':[1,2,3,{'tricky':['oh','man','inception',{'target':[1,2,3,'hello']}]}]}
 d['k1'][3]['tricky'][3]['target'][3]
 
 """# Numpy"""
@@ -46,33 +46,30 @@ import numpy as np
 
 import numpy as np
 array=np.zeros(10)
-print("An array of 10 zeros:")
 print(array)
 
-import numpy as np
 array=np.ones(10)*5
-print("An array of 10 fives:")
 print(array)
 
 """## 5. Create an array of all the even integers from 20 to 35"""
 
 import numpy as np
-array=np.arange(20,35,2)
-print("Array of all the even integers from 20 to 35")
+array=np.arange(20,36)
 print(array)
 
 """## 6. Create a 3x3 matrix with values ranging from 0 to 8"""
 
 import numpy as np
-x =  np.arange(0, 9).reshape(3,3)
+x =  np.arange(0,9).reshape(3,3)
 print(x)
 
 """## 7. Concatinate a and b 
 ## a = np.array([1, 2, 3]), b = np.array([4, 5, 6])
 """
 
-a = np.array([1,2,3])
-b = np.array([4,5,6])
+import numpy as np
+a = np.array([1, 2, 3])
+b = np.array([4, 5, 6])
 np.concatenate((a, b))
 
 """# Pandas
@@ -81,15 +78,15 @@ np.concatenate((a, b))
 """
 
 import pandas as pd
-students = [['jackma', 34, ],
-            ['Ritika', 30, ],['pavi','2']
-            ]
+
+import pandas as pd
+students = [['jackma', 34],
+            ['Ritika', 30],
+            ['Mini',20]]
 df = pd.DataFrame(students,
                   columns=['Name', 'Age'],
                   index=['a', 'b','c'])
 df
-
-
 
 """## 9. Generate the series of dates from 1st Jan, 2023 to 10th Feb, 2023"""
 
@@ -109,6 +106,8 @@ lists = [[1, 'aaa', 22],
 """
 
 lists = [[1, 'aaa', 22], [2, 'bbb', 25], [3, 'ccc', 24]]
+
+lists = [[1, 'aaa', 22], [2, 'bbb', 25], [3, 'ccc', 24]]
 df = pd.DataFrame(lists, columns =['s.no', 'Name', 'Age']) 
 print(df)
-
+9.
